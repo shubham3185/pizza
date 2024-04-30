@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-image: linear-gradient(rgba(22, 23, 104, 0.7), rgba(11, 11, 41, 0.8)), url('https://i.pinimg.com/originals/ba/00/12/ba0012e9e262f582e690c80d1ddc8b2d.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        nav{
+            background-color: rgba(24, 145, 201, 0.986);
+            color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+        }
+        nav .row .img img{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+        nav .row .ul{
+            word-spacing: 15px;
+        } 
+        nav .col-sm-6 button{
+            background-color: orangered;
+            width: 130px;
+            padding: 3px;
+            border: none;
+            color: white;
+            margin: auto;
+            letter-spacing: 2px;
+            border-radius: 3px;
+        }
+
+        @media screen and (min-width:300px) and (max-width:500px)
+        {
+            nav .col-sm-6 button{
+                margin-top: 10px;
+            }
+        }
+        /* Navbar End */
+
+        .container{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 80px;
+        }
+        .container .h6{
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            color: white;
+            
+        }
+        .container h1{
+            font-family: cursive;
+            letter-spacing: 0px;
+            word-spacing: 5px;
+        }
+        .container .box img{
+            border-radius: 1500px;
+            width: 150px;
+            height: 150px;
+        }
+        .container button{
+            background-color: rgb(241, 73, 12);
+            width: 130px;
+            border: none;
+            color: white;
+            padding: 4px;
+            letter-spacing: 1px;
+        }
+
+        @media screen and (min-width:300px) and (max-width:500px) 
+        {
+            .container img{
+                overflow: hidden;
+                width: 100%;
+            }
+            .container button{
+                margin: auto;
+                width: 150px;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                margin:10px 0px 0px 0px;
+            }
+        }
+
+
+          /* start opening time */
+
+          .container9{
+            padding: 10px;
+            background-color: white;
+            margin-top: 150px;
+        }
+        .container1{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .container1 .times{
+            width: 500px;
+            text-align: justify;
+            /* padding: 5px; */
+            margin: 5px;
+        }
+        .container1 .times img{
+            padding: 5px;
+        }
+        .container1 .times button{
+            background-color: orangered;
+            color: white;
+            width: 130px;
+            padding: 3px;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .container1 .ocj{
+            margin-top: 50px;
+            width: 500px;
+            text-align: justify;
+        }
+        .container1 .ocj img{
+            padding: 5px;
+        }
+
+        @media screen and (min-width:330px) and (max-width:500px) 
+        {
+            .container1 .times img
+            {
+                width: 100%;
+                height: 450px;
+            }
+            .container1 .ocj img{
+                width: 100%;
+                height: 450px;
+            }
+            .ab{
+                flex-direction: column-reverse;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+            }
+            .ab p{
+                height: auto;
+            }
+            .container1 .times button{
+                margin: auto;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                width: 100%;
+
+            }
+            
+        }
+            /* close opening time */
+
+             /* start special dishes */
+
+        .container2{
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 .p1{
+            line-height: 1px;
+        }
+        .container2 .p1{
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+        .container2 .dish{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 10px; */
+            line-height: normal;
+        }
+
+        .dish .box1{
+            width: 500px;
+            text-align: justify;
+            margin: 10px;
+        }
+        .dish .box1 img{
+            float: left;
+            margin: 6px;
+        }
+        .dish .box1 span{
+            float: right;
+            color: red;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width:300px) and (max-width:500px)
+        {
+            .container2{
+                margin: 50px 0px 0px 0px;
+                
+            }
+        }
+
+        /* dish close */
+
+        /* start main menu */
+
+        .container3{
+            /* width: 1000px; */
+            text-align: center;
+            justify-content: center;
+            /* margin: auto; */
+            color: white;
+            margin-top: 50px;
+        }
+        .container3 .pm{
+            font-size: larger;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+        }
+        .container3 .main{
+            width: 75%;
+            margin: auto;
+            background-color: white;
+            /* text-align: justify; */
+            color: black;
+            padding: 20px;
+        }
+        .container3 .row{
+            text-align: justify;
+        }
+        .container3 .main span{
+            color: red;
+            float: right;
+        }
+        .main .btnm{
+            width: 130px;
+            background-color: orangered;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            padding: 3px;
+            margin: auto;
+        }
+
+        @media screen and (min-width:300px) and (max-width:500px)
+        {
+            .container3 .main{
+                overflow: hidden;
+                display: inline-block;
+            }
+        }
+        /* end main menu */
+
+        /* start talented chefs */
+        .container4{
+            background-color: white;
+            text-align: center;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 30px;
+        }
+        .container4 .ptc{
+            font-size: x-large;
+            font-weight: 700;
+            line-height: 1px;
+        }
+        
+        .container4 .chefs{
+            width: 75%;
+            margin: auto;
+            
+        }
+        .container4 .chefs .row img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+        /* close end talented chefs */
+
+        /* start testimonials */
+        .container5{
+            text-align: center;
+            justify-content: center;
+            margin-top: 50px;
+            /* margin: 5px; */
+        }
+        .container5 .pt{
+            font-size: x-large;
+            font-weight: 700;
+            line-height: 1px;
+        }
+        .container5 .testm{
+            width: 78%;
+            margin: auto;
+            text-align: justify;
+            padding: 10px;
+            /* margin: 5px; */
+            display: block;
+        }
+        .container5 .testm .row .col-lg-4{
+            border: 1px solid gray;
+            /* margin: 5px ; */
+            padding: 10px;
+            
+        }
+        .container5 .testm .row{
+            /* padding: 5px; */
+            /* column-gap: 1px; */
+        }
+        .container5 .testm .row .col-lg-4 img{
+            float: left;
+        }
+        /* end testimonials */
+
+
+
+        /* start form */
+        .container6{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .container6 .from{
+            width: 80%;
+            margin: auto;
+            text-align: justify;
+            /* border: 2px solidred; */
+        }
+        .container6 .col-lg-7 img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        form input{
+            width: 100%;
+        }
+        form button{
+            background-color: orangered;
+            width: 100%;
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: larger;
+            letter-spacing: 1px;
+            word-spacing: 2px ;
+        }
+        /* close end form */
+
+        /* start footer */
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .foot{
+            width: 75%;
+            margin: auto;
+        }
+        .foot img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+        .foot .row .col-lg-6 a{
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            /* float: right; */
+        }
+        .foot .row i{
+            /* float: right; */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="row p-1">
+                <div class="col-lg-6 img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcFZd09cU2Bo58SXK0oV8Q2nsAafUIlTeEw&usqp=CAU" alt=""></div>
+                <div class="col-lg-6 mt-2"><h6><span style=color:red>CALL US</span> +91 474 57 74365</h6></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 ul">
+                    <!-- <span>Home</span> -->
+                    <span> <a href="E:\shubham yadav FSD\MyWebsite\MyFirstwebsite.html" class="text-white">AboutUs</a></span>
+                    <span>OurServices</span>
+                    <span>OurTeam</span>
+                    <span>Testimonial</span>
+                    <span><a href="contact.html" class="text-white">Contact</a></span>
+                </div>
+                <div class="col-sm-6">
+                    <button>Components</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="box">
+                <img src="https://st2.depositphotos.com/3038577/10113/v/950/depositphotos_101131748-stock-illustration-emblem-of-funny-cook-or.jpg" alt="">
+            </div><br>
+            <h6 class="h6">Welcome To Our Restaurant</h6>
+            <h1>Really Fresh & Tasty</h1>
+            <button>Book A Table</button>
+        </div>
+
+         <!-- Opening time start -->
+
+         <div class="container9">
+            <div class="container1">
+                <div class="times">
+                    <p>Opening Times</p>
+                    <h4>Working Times</h4>
+                    <h6> <span>Monday - Thursday</span> : 2:00 am - 12:00 pm</h6>
+                    <h6> <span>Friday - Saturday</span> : 7:00 am - Midnight</h6>
+                    <h6> <span>Saturday - Sunday</span> : 8:00 am - 12:00 pm</h6><br>
+                    <button class="btn">Book A Table</button>
+                </div>
+                <div class="times">
+                    <img src="https://image.made-in-china.com/202f0j00okqUbygPMOcJ/Pizza-Restaurant-Dining-Table-and-Sofa-Booth-FOH-RFS1-.jpg" alt="" width="240px" height="360px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMYm9IC5ToGD_ZRmQX7OqdKzoIkW09p9rmZl9VfeG33t8kGHC2RvyFyZaLljGAhzG0nM&usqp=CAU" alt="" width="240px" height="360px">
+                </div>
+            </div>
+            <div class="container1 ab">
+                <div class="ocj">
+                    <img src="https://www.interior-design.biz/wp-content/uploads/2019/05/dominos-pizza-interior-design-010-1.jpg" alt="" width="240px" height="360px">
+                    <img src="https://m.media-amazon.com/images/I/81bf83jJvGL._AC_UF1000,1000_QL80_.jpg" width="240px" height="360px" alt="">
+                </div>
+                <div class="ocj">
+                    <p>The Great Story</p><hr>
+                    <h4>Our Client Journey</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ea perspiciatis adipisci earum quam, atque est quis nam officiis rem, ut delectus iure nisi quas tempora praesentium! Labore, quia architecto.</p>
+                </div>
+            </div>
+                <!-- close Opening time -->
+
+
+                <!-- Special dishes start -->
+
+            <div class="container2">
+                <p>Featured Food</p>
+                <p class="p1">Special Dishes</p><br>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg" alt="" width="70px" height="100px">
+                        <p>Aperiam incidunt dicta <span>$25</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://static.toiimg.com/thumb/53339084.cms?width=1200&height=900" alt="" width="70px" height="100px">
+                        <p>chicken pizza <span>$20</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS-9.jpg" alt="" width="70px" height="100px">
+                        <p>Aperi chicken dicta <span>$55</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pepperoni-Pizza_5-SQjpg.jpg" alt="" width="70px" height="100px">
+                        <p>incidunt dicta <span>$29</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="box1">
+                        <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/07/pizza-1296x728-header.jpg?w=1155&h=1528" alt="" width="70px" height="100px">
+                        <p>cream incidunt <span>$38</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                    <div class="box1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_ITJM3AqRd0JSFfXER7KAt0HAs_SGpIQ4jjtjzmkQ22cUOpqP29PvoF8EQJfOCD9lxM&usqp=CAU" alt="" width="70px" height="100px">
+                        <p>incidunt flaour <span>$45</span></p><hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- special dishes close -->
+
+        <!-- start main menu -->
+
+        <div class="container3">
+            <p class="pg">Great Food</p>
+            <p class="pm">Main Menu</p><br><br>
+
+            <div class="main">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>Dolorem Exmaiores <span>$12</span></h6>
+                        <p>Assumenda iusto suscipit cum quos expedita eius!</p><hr>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Aperiam incidunt Dicta <span>$23</span></h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisic.</p><hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>Dolorem Exmaiores <span>$12</span></h6>
+                        <p>Assumenda iusto suscipit cum quos expedita eius!</p><hr>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Aperiam incidunt Dicta <span>$23</span></h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisic.</p><hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>Dolorem Exmaiores <span>$12</span></h6>
+                        <p>Assumenda iusto suscipit cum quos expedita eius!</p><hr>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Aperiam incidunt Dicta <span>$23</span></h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisic.</p><hr>
+                    </div>
+                </div>
+                <button class="btnm">Book A Table</button>
+            </div>
+        </div>
+        <!-- end close main menu -->
+
+        <!-- start talented chefs -->
+        <div class="container10 bg-white">
+            <div class="container4">
+                <p>Great Team</p>
+                <p class="ptc">Talented Chefs</p>
+
+                <div class="chefs">
+                    <div class="row">
+                        <div class="col-lg-4 mt-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZGD0ulmBZdPNN9ahsekQ4eye_5A-eXTDiw&usqp=CAU" alt="">
+                            <h5>lorem desuza</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                            <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> 
+                            <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="col-lg-4 mt-5">
+                            <img src="https://cdn1.vectorstock.com/i/1000x1000/26/95/pizzeria-fast-food-logo-or-label-happy-chef-vector-21132695.jpg" alt="">
+                            <h5>lorem desuza</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                            <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> 
+                            <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="col-lg-4 mt-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWZmf1JIFHUsLqv3cFsV17hLx83Nj8l2VeA&usqp=CAU" alt="">
+                            <h5>lorem desuza</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptatem veniam dolor quae totam atque.</p>
+                            <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> 
+                            <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- close end talented chefs -->
+
+            <!-- start Testimonials -->
+            <div class="container5">
+                <p>Best Clients</p>
+                <p class="pt">Testimonials</p>
+
+                <div class="testm">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="https://static1.bigstockphoto.com/9/2/3/large1500/329016403.jpg" alt="" width="60px" height="60px" style="border-radius: 100%;">
+                        <h4>Jhone Doe</h4>
+                        <p>Business Analyst</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://c8.alamy.com/comp/T7ND9K/hipster-client-sit-at-bar-counter-man-received-delicious-pizza-enjoy-your-meal-cheat-meal-concept-hipster-hungry-eat-italian-pizza-pizza-favorite-restaurant-food-fresh-hot-pizza-for-dinner-T7ND9K.jpg" alt="" width="60px" height="60px" style="border-radius: 100%;">
+                        <h4>Jhone Doe</h4>
+                        <p>Business Analyst</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="https://thumbs.dreamstime.com/b/view-back-cheerful-woman-buying-tasty-pizza-cafe-view-back-cheerful-women-buying-tasty-pizza-cafe-hungry-144206209.jpg" alt="" width="60px" height="60px" style="border-radius: 100%;">
+                        <h4>Jhone Doe</h4>
+                        <p>Business Analyst</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere ipsa numquam eligendi ut ex rem sequi aliquam eius nemo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end close testimonial -->
+
+            <!-- start form -->
+            <div class="container6">
+                <div class="from">
+                    <div class="row m-1">
+                        <div class="col-lg-7">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5K4zojh3p0CvCPXbcmyQBPneD8vXobtukVw&usqp=CAU" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <form action="" class="mt-5" id="form1">
+                                <input type="text" id="name" name="name" placeholder="Your Name" ><br><br>
+                                <input type="tel" id="tel" name="tel" placeholder="Your Phone" ><br><br>
+                                <input type="date" id="date" name="date" placeholder="Date of booking"> <br><br>
+                                <input type="number" id="seats" name="seats" placeholder=" seats"> <br><br>
+                                <button type="button" id="submitBtn">Book A Table</button><br>
+                                <p style="font-size: small; margin-top: 10px;">We don't sapn customers. Check our <span style="color:orangered;">Privacy Policy</span></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end form -->
+        </div>
+
+        <!-- start footer -->
+        <footer>
+            <div class="foot">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="https://media.istockphoto.com/id/1387877918/vector/cartoon-chef-character-with-pizza-italian-food-restaurant-restaurant-emblem-vector.jpg?s=612x612&w=0&k=20&c=4ysCJliNNz_NMHHRxbQBy_M_JoDo26O-B9ElzQWNCLY=" alt="">
+                    </div>
+                    <div class="col-lg-6 mt-5">
+                        <a href="">Our Company</a>
+                        <a href="">Our Location</a>
+                        <a href="">Help center</a>
+                        <a href="">Components</a>
+                    </div>
+                </div><hr>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>2023. DevCrud All rights reserved</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> 
+                            <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-google-plus-g"></i> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("form1");
+    const submitButton = document.getElementById("submitBtn");
+  
+    submitButton.addEventListener("click", function() {
+      const name = form.elements["name"].value;
+      const tel = form.elements["tel"].value;
+      const date = form.elements["date"].value;
+      const seats = form.elements["seats"].value;
+  
+        
+    const formData = `name: ${name}\nphone: ${tel}\ndate: ${date}\nseats: ${seats}`;
+
+
+     const blob = new Blob([formData], { type: "text/plain" });
+  
+      // Create a URL for the Blob
+      const url = URL.createObjectURL(blob);
+  
+      // Create a link to trigger the download
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "form_data.txt";
+      link.textContent = "Download Form Data";
+  
+      // Append the link to the document
+      document.body.appendChild(link);
+  
+      // Simulate a click on the link to trigger the download
+      link.click();
+  
+      // Clean up by revoking the URL
+      URL.revokeObjectURL(url);
+    });
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
